@@ -103,6 +103,23 @@
 									"parameters": {
 										"variable": "no_toLeft"
 									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "toLeft",
+									"sid": 549081098953457,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "toLeft",
+									"sid": 888606781609536,
+									"parameters": {
+										"opacity": "100"
+									}
 								}
 							],
 							"sid": 691823823929973
@@ -117,6 +134,23 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "toLeft",
+									"sid": 202536284482608,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "toLeft",
+									"sid": 199054386357440,
+									"parameters": {
+										"opacity": "50"
+									}
+								},
 								{
 									"id": "set-max-speed",
 									"objectClass": "toLeft",
