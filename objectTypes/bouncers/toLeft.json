@@ -1,0 +1,58 @@
+{
+	"name": "toLeft",
+	"plugin-id": "Sprite",
+	"sid": 947467146385159,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 185171396576282
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 246556967623433
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8789340,
+						"collisionPoly": {
+							"points": [
+								0.03030303030303029,
+								0,
+								1,
+								0.9659090909090903,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 704382615752967,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

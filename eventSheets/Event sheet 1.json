@@ -1,0 +1,473 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "no_toLeft",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 415556154062813
+		},
+		{
+			"eventType": "variable",
+			"name": "Lives",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 645318365096619
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "spawnPlatform",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "toLeft",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 585521154319438,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 894804380441156,
+									"parameters": {
+										"variable": "no_toLeft"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "toLeft",
+									"sid": 720494856608615
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 368820226943085,
+									"parameters": {
+										"object-to-create": "toLeft",
+										"layer": "1",
+										"x": "player.X",
+										"y": "player.Y - 24",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 709407012469379,
+									"parameters": {
+										"variable": "no_toLeft"
+									}
+								}
+							],
+							"sid": 508187605452957
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-arrived",
+									"objectClass": "toLeft",
+									"sid": 356957590276755,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 519837254984363,
+									"parameters": {
+										"variable": "no_toLeft"
+									}
+								}
+							],
+							"sid": 691823823929973
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "toLeft",
+									"sid": 431702029946749
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "toLeft",
+									"sid": 911449570231951,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"max-speed": "80"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "toLeft",
+									"sid": 666681835132544,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"acceleration": "8000"
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "toLeft",
+									"sid": 225736175889024,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "Self.X",
+										"y": "Self.Y - 100",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 334253721316819
+						}
+					],
+					"sid": 861903823414710
+				}
+			],
+			"sid": 284416422533740
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "bullet",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "bullet",
+							"sid": 178016314746419
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "bullet",
+							"sid": 190932444400917,
+							"parameters": {
+								"x": "player.X",
+								"y": "player.Y"
+							}
+						}
+					],
+					"sid": 418635152111074
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "bullet",
+							"sid": 160456426501999,
+							"parameters": {
+								"object": "bulletSpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 393773871286203
+						}
+					],
+					"sid": 865755357901616
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "bullet",
+							"sid": 214004567846802
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 905943091094712,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 941974666125214,
+							"parameters": {
+								"object-to-create": "bullet",
+								"layer": "2",
+								"x": "random(5, 315)",
+								"y": "bulletSpawn.Y + 25",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 353689218657877
+				}
+			],
+			"sid": 424575223223094
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "movement",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 559518944743642,
+									"parameters": {
+										"key": 81
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 112523030034368,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 623280787129759
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 890188856629378,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 541345541335080,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 320443836490680
+						}
+					],
+					"sid": 654617176105930
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 101295784016003,
+							"parameters": {
+								"object": "bullet"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 590898314925547,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "lives",
+							"sid": 803194443041356,
+							"parameters": {
+								"text": "\"Lives : \" & Lives"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 109163353775208
+						}
+					],
+					"sid": 583602596239426,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 126444042315712,
+									"parameters": {
+										"variable": "Lives",
+										"comparison": 1,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 596130883875542,
+									"parameters": {
+										"audio-file": "damaged",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 366863764449618
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 895840194909835,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player",
+							"sid": 321664299114374
+						},
+						{
+							"type": "comment",
+							"text": "audio corrupted (boom.webm), to modifiy later"
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 596414775771777,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "boom",
+								"loop": "not-looping",
+								"volume": "-16",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "GameOver",
+							"sid": 844752181845920,
+							"parameters": {
+								"x": "64",
+								"y": "128"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "bg color change somehow doesn't work"
+						},
+						{
+							"id": "set-layer-background-color",
+							"objectClass": "System",
+							"sid": 528036843227951,
+							"disabled": true,
+							"parameters": {
+								"layer": "0",
+								"color": "rgbEx(56, 80, 42)"
+							}
+						}
+					],
+					"sid": 155258884928580
+				}
+			],
+			"sid": 297115954307048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 773723475942520
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "lives",
+					"sid": 388163220459612,
+					"parameters": {
+						"text": "\"Lives : \" & Lives"
+					}
+				}
+			],
+			"sid": 439416403500795
+		}
+	],
+	"sid": 531686542882309
+}
