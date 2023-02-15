@@ -45,45 +45,100 @@
 									"parameters": {
 										"key": 32
 									}
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 894804380441156,
-									"parameters": {
-										"variable": "no_toLeft"
-									}
 								}
 							],
 							"actions": [
 								{
-									"id": "destroy",
-									"objectClass": "toLeft",
-									"sid": 720494856608615
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 368820226943085,
-									"parameters": {
-										"object-to-create": "toLeft",
-										"layer": "1",
-										"x": "player.X",
-										"y": "player.Y - 24",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
 									"id": "toggle-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 709407012469379,
+									"sid": 586966055076895,
 									"parameters": {
 										"variable": "no_toLeft"
 									}
 								}
 							],
-							"sid": 508187605452957
+							"sid": 508187605452957,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 780746232729922,
+											"parameters": {
+												"variable": "no_toLeft"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "toLeft",
+											"sid": 359496919549313,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "Self.X",
+												"y": "Self.Y",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-opacity",
+											"objectClass": "toLeft",
+											"sid": 792677119697040,
+											"parameters": {
+												"opacity": "100"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "toLeft",
+											"sid": 227053028567248,
+											"behaviorType": "Solid",
+											"parameters": {
+												"state": "enabled"
+											}
+										}
+									],
+									"sid": 469002555585610
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 121759205797029,
+											"parameters": {
+												"variable": "no_toLeft"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "toLeft",
+											"sid": 197534341007902
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 941905734124419,
+											"parameters": {
+												"object-to-create": "toLeft",
+												"layer": "1",
+												"x": "player.X",
+												"y": "player.Y - 24",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 983966052510696
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -122,7 +177,8 @@
 									}
 								}
 							],
-							"sid": 691823823929973
+							"sid": 691823823929973,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
