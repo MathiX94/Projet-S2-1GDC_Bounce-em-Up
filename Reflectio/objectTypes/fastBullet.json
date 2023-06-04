@@ -1,0 +1,57 @@
+{
+	"name": "fastBullet",
+	"plugin-id": "Sprite",
+	"sid": 644396864307434,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "hasBounced",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 486293522288570
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5565156,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8151832,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 586133234711545,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

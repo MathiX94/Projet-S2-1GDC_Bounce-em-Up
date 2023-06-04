@@ -1,0 +1,57 @@
+{
+	"name": "Logo",
+	"plugin-id": "Sprite",
+	"sid": 712223198678462,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3133,
+						"height": 794,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7822155,
+						"collisionPoly": {
+							"points": [
+								0.3035429300989467,
+								0,
+								0.9562719438238111,
+								0.3350125944584383,
+								0.984360038301947,
+								0.37531486146095716,
+								1,
+								0.5566750629722922,
+								0.9562719438238111,
+								0.7380352644836272,
+								0.5777210341525694,
+								1,
+								0,
+								0.7178841309823678,
+								0.005426109160548994,
+								0.3350125944584383
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 782136449171766,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

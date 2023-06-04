@@ -1,0 +1,68 @@
+{
+	"name": "core",
+	"plugin-id": "Sprite",
+	"sid": 464350876582062,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 851666546853120
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 286887203842443
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8666301,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.125,
+								0.5,
+								0,
+								0.875,
+								0.125,
+								1,
+								0.5,
+								0.875,
+								0.875,
+								0.5,
+								1,
+								0.125,
+								0.875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 356219079554754,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

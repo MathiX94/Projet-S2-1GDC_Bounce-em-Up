@@ -1,0 +1,115 @@
+{
+	"name": "ButtonRestart",
+	"plugin-id": "Sprite",
+	"sid": 499025353557599,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 490101569968406
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 776,
+						"height": 315,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 949271,
+						"collisionPoly": {
+							"points": [
+								0.19458762886597913,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								0.8041237113402065,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 776,
+						"height": 315,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9522445,
+						"collisionPoly": {
+							"points": [
+								0.19458762886597913,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								0.8041237113402065,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 776,
+						"height": 315,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1535600,
+						"collisionPoly": {
+							"points": [
+								0.19458762886597913,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								0.8041237113402065,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 855587057811518,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

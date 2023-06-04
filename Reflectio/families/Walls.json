@@ -1,0 +1,13 @@
+{
+	"name": "Walls",
+	"plugin-id": "Sprite",
+	"sid": 526050491918881,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"wallLong",
+		"wallSmall",
+		"wallMid"
+	]
+}

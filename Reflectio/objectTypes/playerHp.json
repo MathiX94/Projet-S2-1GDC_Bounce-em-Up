@@ -1,0 +1,17 @@
+{
+	"name": "playerHp",
+	"plugin-id": "Text",
+	"sid": 981516928777053,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 943215729718962
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

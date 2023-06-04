@@ -1,0 +1,59 @@
+{
+	"name": "GameOver",
+	"plugin-id": "Sprite",
+	"sid": 252948001719477,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 755,
+						"height": 356,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6591635,
+						"collisionPoly": {
+							"points": [
+								0.06622516556291391,
+								0,
+								0.21986754966887417,
+								0,
+								0.9536423841059603,
+								0.12078651685393259,
+								0.9827814569536424,
+								0.18258426966292135,
+								1,
+								0.7443820224719101,
+								0.8754966887417218,
+								1,
+								0.04900662251655629,
+								1,
+								0.01456953642384106,
+								0.9353932584269663,
+								0,
+								0.12078651685393259
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 337530887004419,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

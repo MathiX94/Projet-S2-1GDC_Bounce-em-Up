@@ -1,0 +1,48 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 795588504232866,
+	"instanceVariables": [
+		{
+			"name": "shotCooldown",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 384202019929410
+		},
+		{
+			"name": "name",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 214813728401730
+		},
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 728079125494141
+		},
+		{
+			"name": "FastBullet",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 483669074573229
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 951710257485036
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"enemy2",
+		"enemy1",
+		"enemy3_Sniper"
+	]
+}

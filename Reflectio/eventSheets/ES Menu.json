@@ -1,0 +1,590 @@
+{
+	"name": "ES Menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "launchGame",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 729349633828022
+		},
+		{
+			"eventType": "variable",
+			"name": "exitGame",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 247074910707847
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 770274070946588
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 127598132455209,
+					"parameters": {
+						"cursor-style": "crosshair"
+					}
+				}
+			],
+			"sid": 851203694528125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 694480479874316,
+					"parameters": {
+						"layer": "\"ScoreBoard\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 128332106033482,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "launchGame",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 216199234570167,
+									"parameters": {
+										"object": "ButtonPlay"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonPlay",
+									"sid": 262440310160454,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 100499992728600,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 460733221646291,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonPlay",
+											"sid": 196966101672587,
+											"parameters": {
+												"frame-number": "2"
+											}
+										}
+									],
+									"sid": 773736592132585
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-released",
+											"objectClass": "Mouse",
+											"sid": 803875561700934,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 801037558539960,
+											"parameters": {
+												"variable": "ScoreCount",
+												"value": "0"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 781350311752887,
+											"parameters": {
+												"layout": "hexagon"
+											}
+										}
+									],
+									"sid": 303324088215970
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 345784242057952
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonPlay",
+									"sid": 312792950430899,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 169266292007291
+						}
+					],
+					"sid": 190361350723644
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "exitGame",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 500771335323629,
+									"parameters": {
+										"object": "ButtonExit"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonExit",
+									"sid": 779040084423186,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 206467740379353,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 219423671929313,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonExit",
+											"sid": 615759433399930,
+											"parameters": {
+												"frame-number": "2"
+											}
+										}
+									],
+									"sid": 551476925670956
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-released",
+											"objectClass": "Mouse",
+											"sid": 611213369434873,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "close",
+											"objectClass": "Browser",
+											"sid": 152470516047509
+										}
+									],
+									"sid": 513177547592798
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 540437955006493
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonExit",
+									"sid": 521306119692171,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 486023619397442
+						}
+					],
+					"sid": 751240112929347
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "highScores2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 866890226200609,
+							"parameters": {
+								"layer": "\"ScoreBoard\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 279719171436701,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 624526041065203,
+									"parameters": {
+										"object": "ButtonHighScores"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonHighScores",
+									"sid": 451306054129046,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 961682345736033,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 926083620373818,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 494370297104058,
+											"parameters": {
+												"object": "ButtonHighScores",
+												"time-scale": "1.0"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonHighScores",
+											"sid": 546482873994629,
+											"parameters": {
+												"frame-number": "2"
+											}
+										}
+									],
+									"sid": 558663658101811
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-released",
+											"objectClass": "Mouse",
+											"sid": 327392793786078,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonHighScores",
+											"sid": 931253582253380,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 297070414215741,
+											"parameters": {
+												"layer": "\"ScoreBoard\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 473654844391973,
+											"parameters": {
+												"layer": "\"ScoreBoard\"",
+												"interactive": true
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 746709210107141,
+											"parameters": {
+												"layer": "\"UI\"",
+												"interactive": false
+											}
+										}
+									],
+									"sid": 769250050475855
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 735755118479509
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonHighScores",
+									"sid": 366360937299317,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 239901134115132
+						}
+					]
+				}
+			],
+			"sid": 730565059118384
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Back2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 465612793576393,
+							"parameters": {
+								"object": "ButtonBack"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonBack",
+							"sid": 190892923508899,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 860008780707638,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Mouse",
+									"sid": 574049162959316,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 606477805107530,
+									"parameters": {
+										"object": "ButtonBack",
+										"time-scale": "1.0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "ButtonBack",
+									"sid": 354868365789435,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 239425669792431
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 605098179965597,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 622024274410826,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 662255559442085,
+											"parameters": {
+												"layer": "\"ScoreBoard\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 755726283921415,
+											"parameters": {
+												"layer": "\"ScoreBoard\"",
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 802605773605458,
+											"parameters": {
+												"layer": "\"ScoreBoard\"",
+												"interactive": false
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 585637560806008,
+											"parameters": {
+												"layer": "\"UI\"",
+												"interactive": true
+											}
+										}
+									],
+									"sid": 939007900079231
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 586827208856645
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonBack",
+							"sid": 366239608046708,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 960371175065383
+				}
+			],
+			"sid": 411360173624655
+		}
+	],
+	"sid": 503378709162649
+}

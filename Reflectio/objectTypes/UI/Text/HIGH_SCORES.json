@@ -1,0 +1,37 @@
+{
+	"name": "HIGH_SCORES",
+	"plugin-id": "Sprite",
+	"sid": 122669601959301,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1029,
+						"height": 354,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 197645,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 173212030093182,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

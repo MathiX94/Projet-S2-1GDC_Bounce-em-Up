@@ -1,0 +1,33 @@
+{
+	"name": "Bullets",
+	"plugin-id": "Sprite",
+	"sid": 156921384287886,
+	"instanceVariables": [
+		{
+			"name": "canKillEnemies",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 176543980750190
+		},
+		{
+			"name": "wallBounces",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 237881577240328
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 827626679072716
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"bullet",
+		"fastBullet"
+	]
+}
