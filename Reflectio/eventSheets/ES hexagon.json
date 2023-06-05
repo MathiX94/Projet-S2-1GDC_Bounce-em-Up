@@ -3960,6 +3960,11 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "Bullets",
+									"sid": 670375485156142
+								},
+								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
 									"sid": 901547998661919,
@@ -4077,6 +4082,11 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "Bullets",
+									"sid": 619816542277531
+								},
+								{
 									"id": "create-object",
 									"objectClass": "System",
 									"sid": 463449581838838,
@@ -4151,21 +4161,30 @@
 							],
 							"actions": [
 								{
-									"id": "set-enabled",
-									"objectClass": "Bullets",
-									"sid": 360149264832494,
-									"behaviorType": "Bullet",
-									"parameters": {
-										"state": "disabled"
-									}
-								},
-								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Bullets",
-									"sid": 897812189549099,
+									"sid": 705708972601452,
 									"parameters": {
 										"instance-variable": "initiateDestruction",
 										"value": "false"
+									}
+								},
+								{
+									"id": "set-bounce-off-solids",
+									"objectClass": "Bullets",
+									"sid": 623758680103057,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": false
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Bullets",
+									"sid": 473119786597974,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "Bullets.Bullet.Speed / 2"
 									}
 								}
 							],
