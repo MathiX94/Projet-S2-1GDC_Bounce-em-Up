@@ -56,6 +56,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -104,6 +111,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -163,6 +177,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -213,6 +234,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -259,6 +287,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -305,6 +340,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -341,6 +383,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -400,6 +449,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -450,6 +506,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -496,6 +559,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -542,6 +612,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -578,6 +655,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "particleSpawn",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],

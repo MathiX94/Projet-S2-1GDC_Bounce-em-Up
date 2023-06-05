@@ -157,7 +157,8 @@
 			"enemy3_Sniper",
 			"fastBullet",
 			"ScoreBoard",
-			"PauseTxt"
+			"PauseTxt",
+			"bounceParticle"
 		],
 		"subfolders": [
 			{
@@ -432,9 +433,9 @@
 		],
 		"useThemeColor": false,
 		"themeColor": [
-			1,
-			1,
-			1,
+			0.8705882352941177,
+			0.38823529411764707,
+			0.38823529411764707,
 			0
 		],
 		"orientations": "landscape",
