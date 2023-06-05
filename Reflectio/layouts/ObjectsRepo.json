@@ -46,7 +46,7 @@
 					"type": "bullet",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Regular",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -54,7 +54,8 @@
 					"uid": 13,
 					"instanceVariables": {
 						"canKillEnemies": false,
-						"wallBounces": 0
+						"wallBounces": 0,
+						"initiateDestruction": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -70,8 +71,8 @@
 						}
 					},
 					"world": {
-						"x": 118,
-						"y": 392,
+						"x": 98,
+						"y": 372,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -250,6 +251,9 @@
 							}
 						},
 						"Flash": {
+							"properties": {}
+						},
+						"Timer": {
 							"properties": {}
 						}
 					},
@@ -581,7 +585,7 @@
 					"type": "fastBullet",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Regular",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -590,6 +594,7 @@
 					"instanceVariables": {
 						"canKillEnemies": false,
 						"wallBounces": 0,
+						"initiateDestruction": false,
 						"hasBounced": false
 					},
 					"behaviors": {
@@ -606,7 +611,7 @@
 						}
 					},
 					"world": {
-						"x": 192,
+						"x": 160,
 						"y": 384,
 						"width": 32,
 						"height": 32,

@@ -1162,6 +1162,15 @@
 															}
 														},
 														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 748455072484948,
+															"parameters": {
+																"variable": "waveOnTheWay",
+																"value": "false"
+															}
+														},
+														{
 															"id": "restart-layout",
 															"objectClass": "System",
 															"sid": 660304177361567
@@ -2715,7 +2724,16 @@
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "enemy3_Sniper",
+							"sid": 249387602859755,
+							"parameters": {
+								"animation": "\"loadShot\""
+							}
+						}
+					],
 					"actions": [
 						{
 							"id": "rotate-toward-position",
@@ -2862,6 +2880,18 @@
 												"duration": "300",
 												"weak-magnitude": "100",
 												"strong-magnitude": "100"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 692105356261652,
+											"parameters": {
+												"audio-file": "Explosion 4",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -3075,6 +3105,14 @@
 									"parameters": {
 										"object": "shield"
 									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Bullets",
+									"sid": 289392057462920,
+									"parameters": {
+										"animation": "\"Regular\""
+									}
 								}
 							],
 							"actions": [
@@ -3259,9 +3297,13 @@
 											],
 											"actions": [
 												{
-													"id": "destroy",
+													"id": "set-boolean-instvar",
 													"objectClass": "Bullets",
-													"sid": 979772513774059
+													"sid": 988010465042563,
+													"parameters": {
+														"instance-variable": "initiateDestruction",
+														"value": "true"
+													}
 												}
 											],
 											"sid": 628691249501116
@@ -3300,9 +3342,13 @@
 											],
 											"actions": [
 												{
-													"id": "destroy",
+													"id": "set-boolean-instvar",
 													"objectClass": "Bullets",
-													"sid": 368298054562148
+													"sid": 979312087061955,
+													"parameters": {
+														"instance-variable": "initiateDestruction",
+														"value": "true"
+													}
 												}
 											],
 											"sid": 727453488279588
@@ -3404,6 +3450,14 @@
 											}
 										},
 										{
+											"id": "is-animation-playing",
+											"objectClass": "Bullets",
+											"sid": 757033400893890,
+											"parameters": {
+												"animation": "\"Regular\""
+											}
+										},
+										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Bullets",
 											"sid": 832527661365566,
@@ -3415,9 +3469,13 @@
 									],
 									"actions": [
 										{
-											"id": "destroy",
+											"id": "set-boolean-instvar",
 											"objectClass": "Bullets",
-											"sid": 743965499916112
+											"sid": 286308937119976,
+											"parameters": {
+												"instance-variable": "initiateDestruction",
+												"value": "true"
+											}
 										},
 										{
 											"id": "subtract-from-eventvar",
@@ -3459,6 +3517,54 @@
 									],
 									"sid": 418957279044248,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-animation-frame",
+													"objectClass": "Bullets",
+													"sid": 428439360582865,
+													"parameters": {
+														"comparison": 0,
+														"number": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Bullets",
+													"sid": 265696308565907,
+													"parameters": {
+														"animation": "\"destruction\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 249022186205307
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 515649076040853
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Bullets",
+													"sid": 985020883192742,
+													"parameters": {
+														"animation": "\"destructionBlue\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 886438014670034
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -3513,6 +3619,18 @@
 													}
 												},
 												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 332282808755492,
+													"parameters": {
+														"audio-file": "Explosion 2",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
 													"id": "shake",
 													"objectClass": "enemySpawnArea",
 													"sid": 378802280060108,
@@ -3551,6 +3669,14 @@
 									}
 								},
 								{
+									"id": "is-animation-playing",
+									"objectClass": "Bullets",
+									"sid": 560391940948945,
+									"parameters": {
+										"animation": "\"Regular\""
+									}
+								},
+								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Bullets",
 									"sid": 133782160799282,
@@ -3570,9 +3696,13 @@
 							],
 							"actions": [
 								{
-									"id": "destroy",
+									"id": "set-boolean-instvar",
 									"objectClass": "Bullets",
-									"sid": 260749922589768
+									"sid": 946447336396265,
+									"parameters": {
+										"instance-variable": "initiateDestruction",
+										"value": "true"
+									}
 								},
 								{
 									"id": "add-to-eventvar",
@@ -3593,31 +3723,88 @@
 									}
 								}
 							],
-							"sid": 537576841861174
-						},
-						{
-							"eventType": "block",
-							"conditions": [
+							"sid": 537576841861174,
+							"children": [
 								{
-									"id": "on-animation-finished",
-									"objectClass": "Enemies",
-									"sid": 221131338298857,
-									"parameters": {
-										"animation": "\"death\""
-									}
-								}
-							],
-							"actions": [
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 533276803809327,
+											"parameters": {
+												"first-value": "random(10)",
+												"comparison": 2,
+												"second-value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 979658447108631,
+											"parameters": {
+												"audio-file": "Explosion 1",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 181368895118678
+								},
 								{
-									"id": "destroy",
-									"objectClass": "Enemies",
-									"sid": 240187420089978
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 926593854566080
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 400750349916339,
+											"parameters": {
+												"audio-file": "Explosion 3",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 683835860019966
 								}
-							],
-							"sid": 449375039702316
+							]
 						}
 					],
 					"sid": 956752137343641
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Enemies",
+							"sid": 229237244515597,
+							"parameters": {
+								"animation": "\"death\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 263046798366787
+						}
+					],
+					"sid": 659097197448492
 				},
 				{
 					"eventType": "group",
@@ -3705,6 +3892,15 @@
 										"variable": "waveInProgress",
 										"value": "false"
 									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Bullets",
+									"sid": 428913300210313,
+									"parameters": {
+										"instance-variable": "initiateDestruction",
+										"value": "true"
+									}
 								}
 							],
 							"sid": 514453177346498
@@ -3737,11 +3933,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "Bullets",
-									"sid": 107021653185037
-								},
 								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
@@ -3798,6 +3989,26 @@
 										"variable": "waveOnTheWay",
 										"value": "false"
 									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "player",
+									"sid": 714811246542892,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "1.0",
+										"type": "once",
+										"tag": "\"WaveIFrame\""
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 377156054783730,
+									"parameters": {
+										"variable": "IFrame",
+										"value": "true"
+									}
 								}
 							],
 							"sid": 768046295653219
@@ -3830,11 +4041,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "Bullets",
-									"sid": 585154784884769
-								},
 								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
@@ -3894,9 +4100,171 @@
 								}
 							],
 							"sid": 490899815179975
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-timer",
+									"objectClass": "player",
+									"sid": 436839851184226,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"WaveIFrame\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 818012200602560,
+									"parameters": {
+										"variable": "IFrame",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 920584935361659
 						}
 					],
 					"sid": 805417798524777
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "BulletDestruction",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Bullets",
+									"sid": 984293055371895,
+									"parameters": {
+										"instance-variable": "initiateDestruction"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "Bullets",
+									"sid": 360149264832494,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Bullets",
+									"sid": 897812189549099,
+									"parameters": {
+										"instance-variable": "initiateDestruction",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 913521152056451,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Bullets",
+											"sid": 356763118121084,
+											"parameters": {
+												"comparison": 0,
+												"number": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Bullets",
+											"sid": 812768224400534,
+											"parameters": {
+												"animation": "\"destruction\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 506959760008190
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 976536012646849
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Bullets",
+											"sid": 701926858923479,
+											"parameters": {
+												"animation": "\"destructionBlue\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 367497242967128
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Bullets",
+									"sid": 692131595982413,
+									"parameters": {
+										"animation": "\"destruction\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Bullets",
+									"sid": 161485827335957
+								}
+							],
+							"sid": 190470621094469
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Bullets",
+									"sid": 446071819426268,
+									"parameters": {
+										"animation": "\"destructionBlue\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Bullets",
+									"sid": 643748656724514
+								}
+							],
+							"sid": 538242842320203
+						}
+					],
+					"sid": 491480502321303
 				},
 				{
 					"eventType": "block",

@@ -16,6 +16,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 237881577240328
+		},
+		{
+			"name": "initiateDestruction",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 795660138318383
 		}
 	],
 	"behaviorTypes": [

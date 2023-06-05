@@ -136,6 +136,15 @@
 											}
 										},
 										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 725560225353179,
+											"parameters": {
+												"variable": "waveOnTheWay",
+												"value": "false"
+											}
+										},
+										{
 											"id": "go-to-layout",
 											"objectClass": "System",
 											"sid": 781350311752887,
