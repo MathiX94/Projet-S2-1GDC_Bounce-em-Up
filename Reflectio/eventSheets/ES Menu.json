@@ -46,6 +46,73 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "has-gamepads",
+					"objectClass": "Gamepad",
+					"sid": 109868836106721
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ControlsMovementKB",
+					"sid": 931293291812247,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ControlsShieldKB",
+					"sid": 990424063694865,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 624155850660317,
+					"parameters": {
+						"type": "log",
+						"message": "\"gamepad connected\""
+					}
+				}
+			],
+			"sid": 699122831274625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-gamepad-disconnected",
+					"objectClass": "Gamepad",
+					"sid": 865631267373862
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ControlsMovementKB",
+					"sid": 495334658232433,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ControlsShieldKB",
+					"sid": 754623333010337,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 298996731849017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 694480479874316,

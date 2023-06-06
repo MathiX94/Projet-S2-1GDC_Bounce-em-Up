@@ -158,7 +158,10 @@
 			"fastBullet",
 			"ScoreBoard",
 			"PauseTxt",
-			"bounceParticle"
+			"bounceParticle",
+			"ControlsMovementKB",
+			"ControlsShieldKB",
+			"InputTypes"
 		],
 		"subfolders": [
 			{
