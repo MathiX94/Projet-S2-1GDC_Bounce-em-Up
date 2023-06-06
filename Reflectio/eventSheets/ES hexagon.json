@@ -192,6 +192,16 @@
 			"sid": 969300049115948
 		},
 		{
+			"eventType": "variable",
+			"name": "nextWave",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 696959430356191
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1181,6 +1191,15 @@
 															}
 														},
 														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 613239068997156,
+															"parameters": {
+																"variable": "nextWave",
+																"value": "1"
+															}
+														},
+														{
 															"id": "set-boolean-eventvar",
 															"objectClass": "System",
 															"sid": 748455072484948,
@@ -1367,6 +1386,15 @@
 															"parameters": {
 																"variable": "currentWave",
 																"value": "0"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 213564324040727,
+															"parameters": {
+																"variable": "nextWave",
+																"value": "1"
 															}
 														},
 														{
@@ -3958,7 +3986,105 @@
 									}
 								}
 							],
-							"sid": 514453177346498
+							"sid": 514453177346498,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 374653009147672,
+											"parameters": {
+												"variable": "currentWave",
+												"comparison": 1,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 140972288123554,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "while",
+													"objectClass": "System",
+													"sid": 225686143837000
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 121693631166376,
+													"parameters": {
+														"variable": "currentWave",
+														"comparison": 0,
+														"value": "nextWave"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 973346020743376,
+													"parameters": {
+														"variable": "nextWave",
+														"value": "floor(random(2,maxWave))"
+													}
+												},
+												{
+													"id": "log",
+													"objectClass": "Browser",
+													"sid": 376131103971081,
+													"parameters": {
+														"type": "log",
+														"message": "\"nexWave : \"&nextWave"
+													}
+												}
+											],
+											"sid": 624749550958178
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 781943083894538,
+									"parameters": {
+										"variable": "currentWave",
+										"comparison": 1,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 580548315806528,
+									"parameters": {
+										"variable": "currentWave",
+										"value": "nextWave"
+									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 871763891013329,
+									"parameters": {
+										"type": "log",
+										"message": "\"currentWave : \"&currentWave"
+									}
+								}
+							],
+							"sid": 568940944947115
 						},
 						{
 							"eventType": "comment",
@@ -4053,12 +4179,20 @@
 								{
 									"id": "start-timer",
 									"objectClass": "player",
-									"sid": 714811246542892,
+									"sid": 134738581874528,
 									"behaviorType": "Timer",
 									"parameters": {
-										"duration": "1.0",
+										"duration": "1",
 										"type": "once",
 										"tag": "\"WaveIFrame\""
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "player",
+									"sid": 611032761270020,
+									"parameters": {
+										"opacity": "75"
 									}
 								},
 								{
@@ -4131,10 +4265,10 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 267283472558844,
+									"sid": 797408110212789,
 									"parameters": {
 										"variable": "currentWave",
-										"value": "floor(random(2,maxWave))"
+										"value": "nextWave"
 									}
 								},
 								{
@@ -4170,6 +4304,34 @@
 									"parameters": {
 										"variable": "waveOnTheWay",
 										"value": "false"
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "player",
+									"sid": 474996180523410,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "1",
+										"type": "once",
+										"tag": "\"WaveIFrame\""
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "player",
+									"sid": 438339780353704,
+									"parameters": {
+										"opacity": "75"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 181019068230546,
+									"parameters": {
+										"variable": "IFrame",
+										"value": "true"
 									}
 								}
 							],
@@ -4239,6 +4401,14 @@
 									"parameters": {
 										"variable": "IFrame",
 										"value": "false"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "player",
+									"sid": 909679544906396,
+									"parameters": {
+										"opacity": "100"
 									}
 								}
 							],
