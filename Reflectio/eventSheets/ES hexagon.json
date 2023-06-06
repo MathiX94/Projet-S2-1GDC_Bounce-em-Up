@@ -936,6 +936,31 @@
 													"eventType": "block",
 													"conditions": [
 														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 419689630032486
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 887922269736030,
+															"parameters": {
+																"audio-file": "hoverButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
+															}
+														}
+													],
+													"sid": 901771639684266
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
 															"id": "mouse-button-is-down",
 															"objectClass": "Mouse",
 															"sid": 886313454972806,
@@ -993,6 +1018,18 @@
 															"parameters": {
 																"variable": "IFrame",
 																"value": "false"
+															}
+														},
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 620326439354070,
+															"parameters": {
+																"audio-file": "clickButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
 															}
 														}
 													],
@@ -1082,6 +1119,31 @@
 											],
 											"sid": 750391865056286,
 											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 627972497586908
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 271552724939406,
+															"parameters": {
+																"audio-file": "hoverButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
+															}
+														}
+													],
+													"sid": 513515304408673
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -1209,6 +1271,18 @@
 															}
 														},
 														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 650049095834395,
+															"parameters": {
+																"audio-file": "clickButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
+															}
+														},
+														{
 															"id": "restart-layout",
 															"objectClass": "System",
 															"sid": 660304177361567
@@ -1329,6 +1403,31 @@
 													"eventType": "block",
 													"conditions": [
 														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 245216765487344
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 997072141309916,
+															"parameters": {
+																"audio-file": "hoverButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
+															}
+														}
+													],
+													"sid": 949761467882292
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
 															"id": "mouse-button-is-down",
 															"objectClass": "Mouse",
 															"sid": 786429384091114,
@@ -1431,6 +1530,18 @@
 															"parameters": {
 																"variable": "ScoreCount",
 																"value": "0"
+															}
+														},
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 308958417629655,
+															"parameters": {
+																"audio-file": "clickButton",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"\""
 															}
 														},
 														{
@@ -1578,6 +1689,31 @@
 											"eventType": "block",
 											"conditions": [
 												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 272998060846424
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 222040818495276,
+													"parameters": {
+														"audio-file": "hoverButton",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 433467067079952
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
 													"sid": 500623322636002,
@@ -1645,6 +1781,18 @@
 														"layer": "\"ScoreBoard\"",
 														"interactive": true
 													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 744523499539916,
+													"parameters": {
+														"audio-file": "clickButton",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
 												}
 											],
 											"sid": 469533047886036
@@ -1708,6 +1856,39 @@
 							],
 							"sid": 775193028118764,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 229610170053714,
+											"parameters": {
+												"layer": "\"ScoreBoard\""
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 223408870506416
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 593611804094553,
+											"parameters": {
+												"audio-file": "hoverButton",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 319656055238794
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1785,6 +1966,18 @@
 													"parameters": {
 														"layer": "\"ScoreBoard\"",
 														"interactive": false
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 243495698678014,
+													"parameters": {
+														"audio-file": "clickButton",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
 													}
 												}
 											],

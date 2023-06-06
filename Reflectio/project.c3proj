@@ -303,6 +303,22 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "clickButton.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 595149814988800,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hoverButton.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 892946484040830,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
