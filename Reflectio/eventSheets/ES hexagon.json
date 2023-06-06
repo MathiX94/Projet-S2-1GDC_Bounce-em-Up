@@ -945,13 +945,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 887922269736030,
+															"sid": 799252470107856,
 															"parameters": {
 																"audio-file": "hoverButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"hoverButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 801227642204367,
+															"parameters": {
+																"tag": "\"hoverButton\"",
+																"db": "-10"
 															}
 														}
 													],
@@ -1023,13 +1032,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 620326439354070,
+															"sid": 651673711093428,
 															"parameters": {
 																"audio-file": "clickButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"clickButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 425268936166851,
+															"parameters": {
+																"tag": "\"clickButton\"",
+																"db": "-10"
 															}
 														}
 													],
@@ -1132,13 +1150,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 271552724939406,
+															"sid": 522224073007401,
 															"parameters": {
 																"audio-file": "hoverButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"hoverButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 653589568827482,
+															"parameters": {
+																"tag": "\"hoverButton\"",
+																"db": "-10"
 															}
 														}
 													],
@@ -1273,13 +1300,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 650049095834395,
+															"sid": 981443761840900,
 															"parameters": {
 																"audio-file": "clickButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"clickButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 935447955750725,
+															"parameters": {
+																"tag": "\"clickButton\"",
+																"db": "-10"
 															}
 														},
 														{
@@ -1412,13 +1448,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 997072141309916,
+															"sid": 261251720882271,
 															"parameters": {
 																"audio-file": "hoverButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"hoverButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 535554109567874,
+															"parameters": {
+																"tag": "\"hoverButton\"",
+																"db": "-10"
 															}
 														}
 													],
@@ -1535,13 +1580,22 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 308958417629655,
+															"sid": 252636137660687,
 															"parameters": {
 																"audio-file": "clickButton",
 																"loop": "not-looping",
 																"volume": "0",
 																"stereo-pan": "0",
-																"tag-optional": "\"\""
+																"tag-optional": "\"clickButton\""
+															}
+														},
+														{
+															"id": "set-volume",
+															"objectClass": "Audio",
+															"sid": 561926200416160,
+															"parameters": {
+																"tag": "\"clickButton\"",
+																"db": "-10"
 															}
 														},
 														{
@@ -1698,13 +1752,22 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 222040818495276,
+													"sid": 234440555656895,
 													"parameters": {
 														"audio-file": "hoverButton",
 														"loop": "not-looping",
 														"volume": "0",
 														"stereo-pan": "0",
-														"tag-optional": "\"\""
+														"tag-optional": "\"hoverButton\""
+													}
+												},
+												{
+													"id": "set-volume",
+													"objectClass": "Audio",
+													"sid": 161740148819287,
+													"parameters": {
+														"tag": "\"hoverButton\"",
+														"db": "-10"
 													}
 												}
 											],
@@ -1785,13 +1848,22 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 744523499539916,
+													"sid": 576242378615819,
 													"parameters": {
 														"audio-file": "clickButton",
 														"loop": "not-looping",
 														"volume": "0",
 														"stereo-pan": "0",
-														"tag-optional": "\"\""
+														"tag-optional": "\"clickButton\""
+													}
+												},
+												{
+													"id": "set-volume",
+													"objectClass": "Audio",
+													"sid": 405980804197685,
+													"parameters": {
+														"tag": "\"clickButton\"",
+														"db": "-10"
 													}
 												}
 											],
@@ -1877,13 +1949,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 593611804094553,
+											"sid": 627960840581269,
 											"parameters": {
 												"audio-file": "hoverButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"hoverButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 800840374265527,
+											"parameters": {
+												"tag": "\"hoverButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -1971,13 +2052,22 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 243495698678014,
+													"sid": 749522814747650,
 													"parameters": {
 														"audio-file": "clickButton",
 														"loop": "not-looping",
 														"volume": "0",
 														"stereo-pan": "0",
-														"tag-optional": "\"\""
+														"tag-optional": "\"clickButton\""
+													}
+												},
+												{
+													"id": "set-volume",
+													"objectClass": "Audio",
+													"sid": 703753179816375,
+													"parameters": {
+														"tag": "\"clickButton\"",
+														"db": "-10"
 													}
 												}
 											],
@@ -3065,6 +3155,15 @@
 									}
 								},
 								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 194424743933760,
+									"parameters": {
+										"variable": "NoHitWave",
+										"value": "false"
+									}
+								},
+								{
 									"id": "start-timer",
 									"objectClass": "core",
 									"sid": 769793699869090,
@@ -3750,6 +3849,15 @@
 											"parameters": {
 												"variable": "IFrame",
 												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 128346067481433,
+											"parameters": {
+												"variable": "NoHitWave",
+												"value": "false"
 											}
 										},
 										{
@@ -4450,6 +4558,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 348686428149829,
+									"disabled": true,
 									"parameters": {
 										"variable": "NoHitWave",
 										"value": "true"

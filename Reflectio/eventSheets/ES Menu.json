@@ -38,14 +38,6 @@
 					"parameters": {
 						"cursor-style": "crosshair"
 					}
-				},
-				{
-					"id": "set-master-volume",
-					"objectClass": "Audio",
-					"sid": 699130122855767,
-					"parameters": {
-						"db": "-10"
-					}
 				}
 			],
 			"sid": 851203694528125
@@ -177,13 +169,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 929866332303273,
+											"sid": 477403782751832,
 											"parameters": {
 												"audio-file": "hoverButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"hoverButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 809972531441344,
+											"parameters": {
+												"tag": "\"hoverButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -255,13 +256,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 455947513156409,
+											"sid": 938471407800983,
 											"parameters": {
 												"audio-file": "clickButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"clickButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 112726053000094,
+											"parameters": {
+												"tag": "\"clickButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -337,13 +347,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 966834367375858,
+											"sid": 801331788366673,
 											"parameters": {
 												"audio-file": "hoverButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"hoverButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 444848969180627,
+											"parameters": {
+												"tag": "\"hoverButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -387,21 +406,30 @@
 									],
 									"actions": [
 										{
-											"id": "close",
-											"objectClass": "Browser",
-											"sid": 152470516047509
-										},
-										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 628255505343386,
+											"sid": 419142855358728,
 											"parameters": {
 												"audio-file": "clickButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"clickButton\""
 											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 943224380323941,
+											"parameters": {
+												"tag": "\"clickButton\"",
+												"db": "-10"
+											}
+										},
+										{
+											"id": "close",
+											"objectClass": "Browser",
+											"sid": 691526979419429
 										}
 									],
 									"sid": 513177547592798
@@ -494,13 +522,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 843619055386226,
+											"sid": 907308263004886,
 											"parameters": {
 												"audio-file": "hoverButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"hoverButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 583843580287186,
+											"parameters": {
+												"tag": "\"hoverButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -590,13 +627,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 139049821549227,
+											"sid": 669824667714436,
 											"parameters": {
 												"audio-file": "clickButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"clickButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 740820309711325,
+											"parameters": {
+												"tag": "\"clickButton\"",
+												"db": "-10"
 											}
 										}
 									],
@@ -682,13 +728,22 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 342131734704042,
+									"sid": 167785433769974,
 									"parameters": {
 										"audio-file": "hoverButton",
 										"loop": "not-looping",
 										"volume": "0",
 										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"tag-optional": "\"hoverButton\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 697867049479200,
+									"parameters": {
+										"tag": "\"hoverButton\"",
+										"db": "-10"
 									}
 								}
 							],
@@ -785,13 +840,22 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 523050386279153,
+											"sid": 105842906238632,
 											"parameters": {
 												"audio-file": "clickButton",
 												"loop": "not-looping",
 												"volume": "0",
 												"stereo-pan": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"clickButton\""
+											}
+										},
+										{
+											"id": "set-volume",
+											"objectClass": "Audio",
+											"sid": 635885398160882,
+											"parameters": {
+												"tag": "\"clickButton\"",
+												"db": "-10"
 											}
 										}
 									],
