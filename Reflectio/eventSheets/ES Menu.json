@@ -38,6 +38,14 @@
 					"parameters": {
 						"cursor-style": "crosshair"
 					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 699130122855767,
+					"parameters": {
+						"db": "-10"
+					}
 				}
 			],
 			"sid": 851203694528125
